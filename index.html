@@ -7,10 +7,10 @@
     <title>Exemplos HTML</title>
 </head>
 <body>
-    <h1>Hello World</h1>
+    <h1 >Hello World de novo</h1>
     <h2>Subtitulo</h2>
     <h5>Subtitulo do Subtitulo</h5>
-    <p>
+    <!-- <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime sit cum dolor,<br> placeat eaque culpa saepe vel aspernatur odit eveniet quia animi suscipit nulla explicabo voluptatibus corporis iste fugit fuga.
     </p>
     <h5>Lista não Ordenada</h5>
@@ -27,6 +27,82 @@
         <li>exemplos de subtitulos</li>
         <li>exemplos de subtitulos</li>
         <li>exemplos de subtitulos</li>
-    </ol>
+    </ol>-->
+
+    <!-- <a href="https://academy.kazap.dev/" target="_blank">
+        press me
+    </a>
+
+    <a href="https://academy.kazap.dev/" target="_blank">
+        press me
+    </a>  -->
+
+    <div class="grandParent">
+        <div class="parent"></div>
+            <div class="child"></div>
+    </div>
+
+    <img src="https://picsum.photos/id/237/400/300" alt="Foto do Cachorrinho" />
+
 </body>
+
+<style>
+
+    .grandParent,
+    .parent,
+    .child{
+        border: 5px solid black;
+        display: inline-block;
+    }
+
+    .grandParent{
+        width: 300px;
+        height: 200px;
+        background-color: blue;
+        position: relative;
+    }
+
+    .parent{
+        width: 200px;
+        height: 100px;
+        background-color: brown;
+        /*overflow: hidden;*/
+        position: absolute;
+        /* right: 0; */
+        bottom: 0;
+    }
+
+    .parent:hover{
+        z-index: 1;
+    }
+
+    .child{
+        width: 50%;
+        height: 50%;
+        background-color: chartreuse;
+        position: absolute;
+        bottom: 0;
+    }
+
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    h1 {
+        text-align: center;
+        text-decoration: underline;
+        color: aqua;
+        text-transform: capitalize;
+        border: 6px solid red;
+        padding: 12px;
+    }
+
+    a{
+        border: 1px solid black;
+        padding: 32px;
+        margin: 32px 12px;
+        display: inline-block;
+    }
+</style>
+
 </html>
